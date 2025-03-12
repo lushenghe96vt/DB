@@ -1,101 +1,84 @@
- //db.cpp
+// db.cpp
 #include "db.h"
 
-// defining static variable
+// Define the static instance
 Database* Database::instance = nullptr;
- 
-    Database::Database(const std::string &name, const std::string &username, const std::string &password){
-        Database::username = username;
-        Database::password = password;
-        db = name;
-    }
 
-    Database::~Database(){
-        if(connected){
-            disconnect();
+Database::Database(const std::string& name, const std::string& username, const std::string& password)
+    : db(name), username(username), password(password) {}
+
+// Destructor
+Database::~Database() {
+    if (connected) {
+        disconnect();
+    }
+}
+
+// Static getInstance method
+Database* Database::getInstance(const std::string& name, const std::string& username, const std::string& password) {
+    if (instance == nullptr) {
+        instance = new Database(name, username, password);
+    } else {
+        if (instance->db == name && instance->username == username && instance->password == password) {
+            return instance;
+        } else {
+            throw std::runtime_error("invalid database name, username or password");
         }
     }
+    return instance;
+}
 
-    //"getInstance" that creates and returns the instance of the database. If called first time it sets the username and password. However, subsequent time, it matches the database name, username and password and returns the previous instance if matched else it throws std::runtime_error("invalid database name, username or password"). We are using Singleton Design Pattern that creates only one instance of the databse. The instance is still created by the constructor.
-    //ToDo
-    Database* Database::getInstance(std::string &name, std::string &username, std::string &password){
-        if(instance == nullptr){
-            instance = new Database(name, username, password);
-        }
-        else{
-            if(instance->db == name && instance->username == username && instance->password == password){
-                return instance;
-            }
-            else{
-                throw std::runtime_error("invalid database name, username or password");
-            }
-        }
-        return instance;
+// Connect function
+void Database::connect() {
+    connected = true;
+}
+
+// Disconnect function
+void Database::disconnect() {
+    connected = false;
+}
+
+// Return connection status
+bool Database::isConnected() {
+    return connected;
+}
+
+// Overloaded new operator
+void* Database::operator new(size_t size) {
+    void* p = malloc(size);
+    if (p == nullptr) {
+        throw std::bad_alloc();
     }
+    std::cout << "overloaded new ";
+    return p;
+}
 
-    //"connect" that sets "connected" to true (return void)
-    //ToDo
-    void Database::connect(){
-        connected = true;
-    }
+// Overloaded delete operator
+void Database::operator delete(void* p) {
+    free(p);
+    std::cout << "overloaded delete ";
+}
 
-    //"disconnect" that sets "connected" to false (return void)
-    //ToDo
-    void Database::disconnect(){
-        connected = false;
-    }
+// Set and get username
+void Database::set_username(const std::string& username) {
+    this->username = username;
+}
+std::string Database::get_username() {
+    return username;
+}
 
-    // retrun status of connected true/false (return bool)
-    //ToDo
-    bool Database::isConnected(){
-        return connected;
-    }
+// Set and get password
+void Database::set_password(const std::string& password) {
+    this->password = password;
+}
+std::string Database::get_password() {
+    return password;
+}
 
-    //overload the new operator that allocates memory using malloc of given size and returns pointer of type void and prints " overloaded new " (cout is okay in this case). std::cout << "overloaded new ";
-    //If the memory allocation fails it should throw std::bad_alloc()
-    //ToDo
-    void* Database::operator new(size_t size){
-        void* p = malloc(size);
-        if(p == nullptr){
-            throw std::bad_alloc();
-        }
-        std::cout << " overloaded new ";
-        return p;
-    }
-
-    //overload the delete operator that deallocates memory and prints "overloaded delete " (cout is okay in this). std::cout << "overloaded delete ";
-    //ToDo
-    void Database::operator delete(void* p){
-        free(p);
-        std::cout << "overloaded delete ";
-    }
-
-    //set_username and get_username for username
-    //ToDo
-    void Database::set_username(std::string &username){
-        Database::username = username;
-    }
-
-    //ToDo
-    std::string Database::get_username(){
-        return username;
-    }
-
-    //set_password and get_password for password.
-    //ToDo
-    void Database::set_password(std::string &password){
-        Database::password = password;
-    }
-
-    //ToDo
-    std::string Database::get_password(){
-        return password;
-    }
-
-
- void Database::resetInstance() {
+// Reset instance
+void Database::resetInstance() {
     if (instance != nullptr) {
-      delete instance;
-      instance = nullptr;
+        delete instance;
+        instance = nullptr;
     }
-  }
+}
