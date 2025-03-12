@@ -34,6 +34,7 @@
     //ToDo
     ~Database();
 
+    public:
     //"getInstance" that creates and returns the instance of the database. If called first time it sets the username and password. However, subsequent time, it matches the database name, username and password and returns the previous instance if matched else it throws std::runtime_error("invalid database name, username or password"). We are using Singleton Design Pattern that creates only one instance of the databse. The instance is still created by the constructor.
     //ToDo
     Database* getInstance(std::string &name, std::string &username, std::string &password);
