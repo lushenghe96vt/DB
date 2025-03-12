@@ -1,5 +1,9 @@
  //db.cpp
 #include "db.h"
+
+// defining static variable
+Database* Database::instance = nullptr;
+ 
     Database::Database(const std::string &name, const std::string &username, const std::string &password){
         Database::username = username;
         Database::password = password;
