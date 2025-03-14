@@ -4,16 +4,16 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineSystem.cmake:205 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineSystem.cmake:205 (message)"
       - "CMakeLists.txt:28 (project)"
     message: |
       The system is: Windows - 10.0.19045 - AMD64
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCCompiler.cmake:123 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:28 (project)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
@@ -24,9 +24,9 @@ events:
       The output was:
       0
       MSBuild version 17.7.2+d6990bcfa for .NET Framework
-      Build started 3/11/2025 10:49:27 PM.
+      Build started 3/14/2025 12:19:32 PM.
       
-      Project "C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
+      Project "C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Creating directory "Debug\\CompilerIdC.tlog\\".
@@ -38,7 +38,7 @@ events:
         CMakeCCompilerId.c
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdC.lib" /MACHINE:X64 Debug\\CMakeCCompilerId.obj
-        CompilerIdC.vcxproj -> C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.exe
+        CompilerIdC.vcxproj -> C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
         :VCEnd
@@ -46,13 +46,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdC.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdC.tlog\\CompilerIdC.lastbuildstate".
-      Done Building Project "C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\3.30.3\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
+      Done Building Project "C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\3.31.5\\CompilerIdC\\CompilerIdC.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.80
+      Time Elapsed 00:00:00.89
       
       
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
@@ -60,14 +60,14 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
       
       The C compiler identification is MSVC, found in:
-        C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/3.30.3/CompilerIdC/CompilerIdC.exe
+        C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/3.31.5/CompilerIdC/CompilerIdC.exe
       
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:17 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerId.cmake:64 (__determine_compiler_id_test)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCXXCompiler.cmake:126 (CMAKE_DETERMINE_COMPILER_ID)"
       - "CMakeLists.txt:28 (project)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
@@ -78,9 +78,9 @@ events:
       The output was:
       0
       MSBuild version 17.7.2+d6990bcfa for .NET Framework
-      Build started 3/11/2025 10:49:28 PM.
+      Build started 3/14/2025 12:19:34 PM.
       
-      Project "C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
+      Project "C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" on node 1 (default targets).
       PrepareForBuild:
         Creating directory "Debug\\".
         Creating directory "Debug\\CompilerIdCXX.tlog\\".
@@ -92,7 +92,7 @@ events:
         CMakeCXXCompilerId.cpp
       Link:
         C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:".\\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\\CompilerIdCXX.lib" /MACHINE:X64 Debug\\CMakeCXXCompilerId.obj
-        CompilerIdCXX.vcxproj -> C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.exe
+        CompilerIdCXX.vcxproj -> C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.exe
       PostBuildEvent:
         for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
         :VCEnd
@@ -100,13 +100,13 @@ events:
       FinalizeBuildStatus:
         Deleting file "Debug\\CompilerIdCXX.tlog\\unsuccessfulbuild".
         Touching "Debug\\CompilerIdCXX.tlog\\CompilerIdCXX.lastbuildstate".
-      Done Building Project "C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\3.30.3\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
+      Done Building Project "C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\3.31.5\\CompilerIdCXX\\CompilerIdCXX.vcxproj" (default targets).
       
       Build succeeded.
           0 Warning(s)
           0 Error(s)
       
-      Time Elapsed 00:00:00.60
+      Time Elapsed 00:00:00.64
       
       
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
@@ -114,19 +114,19 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
       
       The CXX compiler identification is MSVC, found in:
-        C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/3.30.3/CompilerIdCXX/CompilerIdCXX.exe
+        C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/3.31.5/CompilerIdCXX/CompilerIdCXX.exe
       
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:28 (project)"
     checks:
       - "Detecting C compiler ABI info"
     directories:
-      source: "C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-4c9g3e"
-      binary: "C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-4c9g3e"
+      source: "C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-6cidrc"
+      binary: "C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-6cidrc"
     cmakeVariables:
       CMAKE_C_FLAGS: "/DWIN32 /D_WINDOWS /W3"
       CMAKE_C_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -135,46 +135,46 @@ events:
       variable: "CMAKE_C_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-4c9g3e'
+        Change Dir: 'C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-6cidrc'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ea33a.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_c64f6.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.7.2+d6990bcfa for .NET Framework
-        Build started 3/11/2025 10:49:29 PM.
+        Build started 3/14/2025 12:19:35 PM.
         
-        Project "C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4c9g3e\\cmTC_ea33a.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cidrc\\cmTC_c64f6.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_ea33a.dir\\Debug\\".
-          Creating directory "C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4c9g3e\\Debug\\".
-          Creating directory "cmTC_ea33a.dir\\Debug\\cmTC_ea33a.tlog\\".
+          Creating directory "cmTC_c64f6.dir\\Debug\\".
+          Creating directory "C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cidrc\\Debug\\".
+          Creating directory "cmTC_c64f6.dir\\Debug\\cmTC_c64f6.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ea33a.dir\\Debug\\cmTC_ea33a.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_ea33a.dir\\Debug\\cmTC_ea33a.tlog\\unsuccessfulbuild".
+          Creating "cmTC_c64f6.dir\\Debug\\cmTC_c64f6.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_c64f6.dir\\Debug\\cmTC_c64f6.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ea33a.dir\\Debug\\\\" /Fd"cmTC_ea33a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c64f6.dir\\Debug\\\\" /Fd"cmTC_c64f6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32822 for x64
           CMakeCCompilerABI.c
           Copyright (C) Microsoft Corporation.  All rights reserved.
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_ea33a.dir\\Debug\\\\" /Fd"cmTC_ea33a.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCCompilerABI.c"
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_c64f6.dir\\Debug\\\\" /Fd"cmTC_c64f6.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCCompilerABI.c"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4c9g3e\\Debug\\cmTC_ea33a.exe" /INCREMENTAL /ILK:"cmTC_ea33a.dir\\Debug\\cmTC_ea33a.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-4c9g3e/Debug/cmTC_ea33a.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-4c9g3e/Debug/cmTC_ea33a.lib" /MACHINE:X64  /machine:x64 cmTC_ea33a.dir\\Debug\\CMakeCCompilerABI.obj
-          cmTC_ea33a.vcxproj -> C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4c9g3e\\Debug\\cmTC_ea33a.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cidrc\\Debug\\cmTC_c64f6.exe" /INCREMENTAL /ILK:"cmTC_c64f6.dir\\Debug\\cmTC_c64f6.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-6cidrc/Debug/cmTC_c64f6.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-6cidrc/Debug/cmTC_c64f6.lib" /MACHINE:X64  /machine:x64 cmTC_c64f6.dir\\Debug\\CMakeCCompilerABI.obj
+          cmTC_c64f6.vcxproj -> C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cidrc\\Debug\\cmTC_c64f6.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_ea33a.dir\\Debug\\cmTC_ea33a.tlog\\unsuccessfulbuild".
-          Touching "cmTC_ea33a.dir\\Debug\\cmTC_ea33a.tlog\\cmTC_ea33a.lastbuildstate".
-        Done Building Project "C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-4c9g3e\\cmTC_ea33a.vcxproj" (default targets).
+          Deleting file "cmTC_c64f6.dir\\Debug\\cmTC_c64f6.tlog\\unsuccessfulbuild".
+          Touching "cmTC_c64f6.dir\\Debug\\cmTC_c64f6.tlog\\cmTC_c64f6.lastbuildstate".
+        Done Building Project "C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-6cidrc\\cmTC_c64f6.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
             0 Error(s)
         
-        Time Elapsed 00:00:00.55
+        Time Elapsed 00:00:00.54
         
       exitCode: 0
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:28 (project)"
     message: |
       Parsed C implicit link information:
@@ -190,9 +190,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:28 (project)"
     message: |
       Running the C compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/HostX64/x64/link.exe" "-v"
@@ -201,14 +201,14 @@ events:
   -
     kind: "try_compile-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:74 (try_compile)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:28 (project)"
     checks:
       - "Detecting CXX compiler ABI info"
     directories:
-      source: "C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-acfhur"
-      binary: "C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-acfhur"
+      source: "C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-muxsjo"
+      binary: "C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-muxsjo"
     cmakeVariables:
       CMAKE_CXX_FLAGS: "/DWIN32 /D_WINDOWS /W3 /GR /EHsc"
       CMAKE_CXX_FLAGS_DEBUG: "/MDd /Zi /Ob0 /Od /RTC1"
@@ -218,33 +218,33 @@ events:
       variable: "CMAKE_CXX_ABI_COMPILED"
       cached: true
       stdout: |
-        Change Dir: 'C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-acfhur'
+        Change Dir: 'C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-muxsjo'
         
-        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_ba6d9.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
+        Run Build Command(s): "C:/Program Files/Microsoft Visual Studio/2022/Community/MSBuild/Current/Bin/amd64/MSBuild.exe" cmTC_27ce0.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=17.0 /v:n
         MSBuild version 17.7.2+d6990bcfa for .NET Framework
-        Build started 3/11/2025 10:49:30 PM.
+        Build started 3/14/2025 12:19:36 PM.
         
-        Project "C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-acfhur\\cmTC_ba6d9.vcxproj" on node 1 (default targets).
+        Project "C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-muxsjo\\cmTC_27ce0.vcxproj" on node 1 (default targets).
         PrepareForBuild:
-          Creating directory "cmTC_ba6d9.dir\\Debug\\".
-          Creating directory "C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-acfhur\\Debug\\".
-          Creating directory "cmTC_ba6d9.dir\\Debug\\cmTC_ba6d9.tlog\\".
+          Creating directory "cmTC_27ce0.dir\\Debug\\".
+          Creating directory "C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-muxsjo\\Debug\\".
+          Creating directory "cmTC_27ce0.dir\\Debug\\cmTC_27ce0.tlog\\".
         InitializeBuildStatus:
-          Creating "cmTC_ba6d9.dir\\Debug\\cmTC_ba6d9.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
-          Touching "cmTC_ba6d9.dir\\Debug\\cmTC_ba6d9.tlog\\unsuccessfulbuild".
+          Creating "cmTC_27ce0.dir\\Debug\\cmTC_27ce0.tlog\\unsuccessfulbuild" because "AlwaysCreate" was specified.
+          Touching "cmTC_27ce0.dir\\Debug\\cmTC_27ce0.tlog\\unsuccessfulbuild".
         ClCompile:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ba6d9.dir\\Debug\\\\" /Fd"cmTC_ba6d9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\CL.exe /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_27ce0.dir\\Debug\\\\" /Fd"cmTC_27ce0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
           Microsoft (R) C/C++ Optimizing Compiler Version 19.37.32822 for x64
-          Copyright (C) Microsoft Corporation.  All rights reserved.
           CMakeCXXCompilerABI.cpp
-          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ba6d9.dir\\Debug\\\\" /Fd"cmTC_ba6d9.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.30\\Modules\\CMakeCXXCompilerABI.cpp"
+          Copyright (C) Microsoft Corporation.  All rights reserved.
+          cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\\"Debug\\"" /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_27ce0.dir\\Debug\\\\" /Fd"cmTC_27ce0.dir\\Debug\\vc143.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\\Program Files\\CMake\\share\\cmake-3.31\\Modules\\CMakeCXXCompilerABI.cpp"
         Link:
-          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-acfhur\\Debug\\cmTC_ba6d9.exe" /INCREMENTAL /ILK:"cmTC_ba6d9.dir\\Debug\\cmTC_ba6d9.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-acfhur/Debug/cmTC_ba6d9.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Sheng Lu/Documents/School/Undergraduate/Junior Year/Spring Sem/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-acfhur/Debug/cmTC_ba6d9.lib" /MACHINE:X64  /machine:x64 cmTC_ba6d9.dir\\Debug\\CMakeCXXCompilerABI.obj
-          cmTC_ba6d9.vcxproj -> C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-acfhur\\Debug\\cmTC_ba6d9.exe
+          C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.37.32822\\bin\\HostX64\\x64\\link.exe /ERRORREPORT:QUEUE /OUT:"C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-muxsjo\\Debug\\cmTC_27ce0.exe" /INCREMENTAL /ILK:"cmTC_27ce0.dir\\Debug\\cmTC_27ce0.ilk" /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-muxsjo/Debug/cmTC_27ce0.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/CMakeScratch/TryCompile-muxsjo/Debug/cmTC_27ce0.lib" /MACHINE:X64  /machine:x64 cmTC_27ce0.dir\\Debug\\CMakeCXXCompilerABI.obj
+          cmTC_27ce0.vcxproj -> C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-muxsjo\\Debug\\cmTC_27ce0.exe
         FinalizeBuildStatus:
-          Deleting file "cmTC_ba6d9.dir\\Debug\\cmTC_ba6d9.tlog\\unsuccessfulbuild".
-          Touching "cmTC_ba6d9.dir\\Debug\\cmTC_ba6d9.tlog\\cmTC_ba6d9.lastbuildstate".
-        Done Building Project "C:\\Users\\Sheng Lu\\Documents\\School\\Undergraduate\\Junior Year\\Spring Sem\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-acfhur\\cmTC_ba6d9.vcxproj" (default targets).
+          Deleting file "cmTC_27ce0.dir\\Debug\\cmTC_27ce0.tlog\\unsuccessfulbuild".
+          Touching "cmTC_27ce0.dir\\Debug\\cmTC_27ce0.tlog\\cmTC_27ce0.lastbuildstate".
+        Done Building Project "C:\\Users\\Bobby Lu\\Documents\\School\\Undergraduate\\Junior_Year\\Academics\\Spring\\ECE 3574\\DB\\build\\CMakeFiles\\CMakeScratch\\TryCompile-muxsjo\\cmTC_27ce0.vcxproj" (default targets).
         
         Build succeeded.
             0 Warning(s)
@@ -256,8 +256,8 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:218 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:28 (project)"
     message: |
       Parsed CXX implicit link information:
@@ -273,9 +273,9 @@ events:
   -
     kind: "message-v1"
     backtrace:
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
-      - "C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/Internal/CMakeDetermineLinkerId.cmake:40 (message)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeDetermineCompilerABI.cmake:255 (cmake_determine_linker_id)"
+      - "C:/Program Files/CMake/share/cmake-3.31/Modules/CMakeTestCXXCompiler.cmake:26 (CMAKE_DETERMINE_COMPILER_ABI)"
       - "CMakeLists.txt:28 (project)"
     message: |
       Running the CXX compiler's linker: "C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.37.32822/bin/HostX64/x64/link.exe" "-v"

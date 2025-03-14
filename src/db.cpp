@@ -1,11 +1,14 @@
 // db.cpp
 #include "db.h"
 
-// Define the static instance
 Database* Database::instance = nullptr;
 
-Database::Database(const std::string& name, const std::string& username, const std::string& password)
-    : db(name), username(username), password(password) {}
+// Constructor
+Database::Database(const std::string& name, const std::string& username, const std::string& password){
+    db = name;
+    Database::username = username;
+    Database::password = password;
+}
 
 // Destructor
 Database::~Database() {
@@ -14,36 +17,38 @@ Database::~Database() {
     }
 }
 
-// Static getInstance method
+// GetInstance
 Database* Database::getInstance(const std::string& name, const std::string& username, const std::string& password) {
     if (instance == nullptr) {
         instance = new Database(name, username, password);
-    } else {
+    } 
+    else {
         if (instance->db == name && instance->username == username && instance->password == password) {
             return instance;
-        } else {
+        } 
+        else {
             throw std::runtime_error("invalid database name, username or password");
         }
     }
     return instance;
 }
 
-// Connect function
+// Connect
 void Database::connect() {
     connected = true;
 }
 
-// Disconnect function
+// Disconnect
 void Database::disconnect() {
     connected = false;
 }
 
-// Return connection status
+// isConnected
 bool Database::isConnected() {
     return connected;
 }
 
-// Overloaded new operator
+// Overloaded new
 void* Database::operator new(size_t size) {
     void* p = malloc(size);
     if (p == nullptr) {
@@ -53,7 +58,7 @@ void* Database::operator new(size_t size) {
     return p;
 }
 
-// Overloaded delete operator
+// Overloaded delete
 void Database::operator delete(void* p) {
     free(p);
     std::cout << "overloaded delete ";
@@ -75,10 +80,9 @@ std::string Database::get_password() {
     return password;
 }
 
-// Reset instance
 void Database::resetInstance() {
     if (instance != nullptr) {
-        delete instance;
-        instance = nullptr;
+      delete instance;
+      instance = nullptr;
     }
-}
+  }
