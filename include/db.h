@@ -1,7 +1,7 @@
+
 // db.h
 #include <string>
 #include <iostream>
-//#include <ctime>
 
 class Database {
 private:
@@ -23,10 +23,6 @@ private:
     Database(const std::string& name, const std::string& username, const std::string& password);
     //destructor that disconnects the connection if connected.
     ~Database();
-
-    // Variables for timeout
-    //time_t last_activity;
-    //static const int TIMEOUT{5};
 
 public:
     //"getInstance" that creates and returns the instance of the database. If called first time it sets the username and password. However, subsequent time, it matches the database name, username and password and returns the previous instance if matched else it throws std::runtime_error("invalid database name, username or password"). We are using Singleton Design Pattern that creates only one instance of the databse. The instance is still created by the constructor.
@@ -52,20 +48,4 @@ public:
 
     //The static "resetInstance" as defined below.
     static void resetInstance();
-
-    // Checks if the connection has been inactive for longer than TIMEOUT seconds
-    // Returns true if the timeout threshold has been exceeded, false otherwise
-    bool isTimeout();
-
-    // Updates the last_activity timestamp to the current time
-    // Should be called whenever there is interaction with the database to reset the timeout
-    void refreshConnection();
-
-    // Copy and move
-    /*
-    Database(const Database&) = delete;
-    Database& operator=(const Database&) = delete;
-    Database(Database&&) noexcept;
-    Database& operator=(Database&&) noexcept;
-    */
 };

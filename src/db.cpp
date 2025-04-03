@@ -1,3 +1,4 @@
+
 // db.cpp
 #include "db.h"
 
@@ -85,35 +86,4 @@ void Database::resetInstance() {
       delete instance;
       instance = nullptr;
     }
-}
-/*
-// Copy constructor
-Database::Database(const Database& db) {
-    throw std::runtime_error("Copy operations are not allowed");
-}
-
-// Copy Assignment operator
-Database& Database::operator=(const Database &db) {
-    throw std::runtime_error("Assignment operations are not allowed");
-}
-
-// Move constructor
-Database::Database(Database&& db) noexcept {
-    throw std::runtime_error("Move operations are not allowed");
-}
-
-// Move Assignment Operator
-Database& Database::operator=(Database&& db) noexcept {
-    throw std::runtime_error("Move operations are not allowed");
-}
-
-// Refresh connection to update the last activity timestamp
-void Database::refreshConnection() {
-    last_activity = std::time(nullptr);
-}
-
-// Check if the connection has timed out
-bool Database::isTimeout() {
-    return (std::time(nullptr) - last_activity) > TIMEOUT;
-}
-*/
+  }
