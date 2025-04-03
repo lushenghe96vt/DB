@@ -25,8 +25,8 @@ private:
     ~Database();
 
     // Variables for timeout
-    time_t last_activity;
-    static const int TIMEOUT{5};
+    //time_t last_activity;
+    //static const int TIMEOUT{5};
 
 public:
     //"getInstance" that creates and returns the instance of the database. If called first time it sets the username and password. However, subsequent time, it matches the database name, username and password and returns the previous instance if matched else it throws std::runtime_error("invalid database name, username or password"). We are using Singleton Design Pattern that creates only one instance of the databse. The instance is still created by the constructor.
@@ -45,10 +45,10 @@ public:
 
     //set_username and get_username for username
     void set_username(const std::string& username);
-    std::string get_username();
+    std::string get_username() const;
     //set_password and get_password for password.
     void set_password(const std::string& password);
-    std::string get_password();
+    std::string get_password() const;
 
     //The static "resetInstance" as defined below.
     static void resetInstance();
@@ -62,9 +62,10 @@ public:
     void refreshConnection();
 
     // Copy and move
+    /*
     Database(const Database&) = delete;
     Database& operator=(const Database&) = delete;
     Database(Database&&) noexcept;
     Database& operator=(Database&&) noexcept;
-
+    */
 };

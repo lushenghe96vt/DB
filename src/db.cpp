@@ -68,7 +68,7 @@ void Database::operator delete(void* p) {
 void Database::set_username(const std::string& username) {
     this->username = username;
 }
-std::string Database::get_username() {
+std::string Database::get_username() const{
     return username;
 }
 
@@ -76,7 +76,7 @@ std::string Database::get_username() {
 void Database::set_password(const std::string& password) {
     this->password = password;
 }
-std::string Database::get_password() {
+std::string Database::get_password() const{
     return password;
 }
 
@@ -86,7 +86,7 @@ void Database::resetInstance() {
       instance = nullptr;
     }
 }
-
+/*
 // Copy constructor
 Database::Database(const Database& db) {
     throw std::runtime_error("Copy operations are not allowed");
@@ -116,3 +116,4 @@ void Database::refreshConnection() {
 bool Database::isTimeout() {
     return (std::time(nullptr) - last_activity) > TIMEOUT;
 }
+*/
