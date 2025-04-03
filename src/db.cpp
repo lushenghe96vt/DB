@@ -9,6 +9,7 @@ Database::Database(const std::string& name, const std::string& username, const s
     db = name;
     Database::username = username;
     Database::password = password;
+    last_activity = std::time(nullptr); // Initialize the last activity timestamp
 }
 
 // Destructor
@@ -87,3 +88,39 @@ void Database::resetInstance() {
       instance = nullptr;
     }
   }
+
+  // Copy constructor
+Database::Database(const Database& db) {
+    throw std::runtime_error("Copy operations are not allowed");
+}
+
+// Copy Assignment operator
+Database& Database::operator=(const Database &db) {
+    throw std::runtime_error("Assignment operations are not allowed");
+    return *this;
+}
+
+// Move constructor
+Database::Database(Database&& db) noexcept {
+    throw std::runtime_error("Move operations are not allowed");
+}
+
+// Move Assignment Operator
+Database& Database::operator=(Database&& db) noexcept {
+    throw std::runtime_error("Move operations are not allowed");
+    return *this;
+}
+
+// Check if the connection has timed out
+bool Database::isTimeout() {
+    if ((std::time(nullptr) - last_activity) > TIMEOUT) {
+        connected = false;
+        return true;
+    }
+    return false;
+}
+
+// Refresh connection to update the last activity timestamp
+void Database::refreshConnection() {
+    last_activity = std::time(nullptr);
+}
