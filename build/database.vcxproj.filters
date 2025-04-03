@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\Bobby Lu\Documents\School\Undergraduate\Junior_Year\Academics\Spring\ECE 3574\DB\src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\Bobby Lu\Documents\School\Undergraduate\Junior_Year\Academics\Spring\ECE 3574\DB\src\db.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\Bobby Lu\Documents\School\Undergraduate\Junior_Year\Academics\Spring\ECE 3574\DB\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{8AA36A7C-AF0B-3CF6-8F1E-78D6F077482E}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
