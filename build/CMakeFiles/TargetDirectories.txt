@@ -1,5 +1,0 @@
-C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/database.dir
-C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/my_test.dir
-C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/RUN_TESTS.dir
-C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/ALL_BUILD.dir
-C:/Users/Bobby Lu/Documents/School/Undergraduate/Junior_Year/Academics/Spring/ECE 3574/DB/build/CMakeFiles/ZERO_CHECK.dir
