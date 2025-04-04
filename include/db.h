@@ -5,8 +5,7 @@
 #include <ctime>
 
 class Database {
-//private:
-public: 
+private: 
     //member variable "db" is of string type
     std::string db;
     //member variable "username" is of string type
@@ -30,7 +29,7 @@ public:
     time_t last_activity;
     static const int TIMEOUT{5};
 
-//public:
+public:
     //"getInstance" that creates and returns the instance of the database. If called first time it sets the username and password. However, subsequent time, it matches the database name, username and password and returns the previous instance if matched else it throws std::runtime_error("invalid database name, username or password"). We are using Singleton Design Pattern that creates only one instance of the databse. The instance is still created by the constructor.
     static Database* getInstance(const std::string& name, const std::string& username, const std::string& password);
     //"connect" that sets "connected" to true (return void)
