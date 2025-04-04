@@ -2,6 +2,7 @@
 // db.h
 #include <string>
 #include <iostream>
+#include <ctime>
 
 class Database {
 //private:
