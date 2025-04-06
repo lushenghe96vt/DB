@@ -97,7 +97,6 @@ Database::Database(const Database& db) {
 // Copy Assignment operator
 Database& Database::operator=(const Database &db) {
     throw std::runtime_error("Assignment operations are not allowed");
-    return *this;
 }
 
 // Move constructor
@@ -108,7 +107,6 @@ Database::Database(Database&& db) noexcept {
 // Move Assignment Operator
 Database& Database::operator=(Database&& db) noexcept {
     throw std::runtime_error("Move operations are not allowed");
-    return *this;
 }
 
 // Check if the connection has timed out
