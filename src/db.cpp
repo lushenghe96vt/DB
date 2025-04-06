@@ -101,12 +101,12 @@ Database& Database::operator=(const Database &db) {
 
 // Move constructor
 Database::Database(const Database&& db) noexcept {
-    //throw std::runtime_error("Move operations are not allowed");
+    throw std::runtime_error("Move operations are not allowed");
 }
 
 // Move Assignment Operator
 Database& Database::operator=(const Database&& db) noexcept {
-    //throw std::runtime_error("Move operations are not allowed");
+    throw std::runtime_error("Move operations are not allowed");
 }
 
 // Check if the connection has timed out
