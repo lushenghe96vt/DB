@@ -62,6 +62,6 @@ public:
     // Copy and move prevention
     Database(const Database&);
     Database& operator=(const Database&);
-    Database(Database&&) noexcept;
-    Database& operator=(Database&&) noexcept;
+    Database(const Database&&) noexcept;
+    Database& operator=(const Database&&) noexcept;
 };

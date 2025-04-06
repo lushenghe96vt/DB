@@ -100,12 +100,12 @@ Database& Database::operator=(const Database &db) {
 }
 
 // Move constructor
-Database::Database(Database&& db) noexcept {
+Database::Database(const Database&& db) noexcept {
     throw std::runtime_error("Move operations are not allowed");
 }
 
 // Move Assignment Operator
-Database& Database::operator=(Database&& db) noexcept {
+Database& Database::operator=(const Database&& db) noexcept {
     throw std::runtime_error("Move operations are not allowed");
 }
 
